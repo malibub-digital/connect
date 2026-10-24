@@ -1,0 +1,23 @@
+# .gitignore pour Mali Connecte
+
+# Fichiers sensibles et secrets
+.env
+.env.*
+*.env
+!*.env.example
+*.key
+*.pem
+*.cert
+*.crt
+id_rsa*
+secrets/
+
+# Données locales & caches
+media/
+certs/
+custom-templates/
+database/
+redis/
+node_modules/
+.DS_Store
+*.log
