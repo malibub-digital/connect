@@ -1,6 +1,6 @@
 # 🇲🇱 Mali Connecte (`connect.malihub.digital`)
 
-Fournisseur d'Identité étatique et régalien (IdP OIDC / OAuth2) pour l'écosystème Malihub et les administrations publiques partenaires (Consulat du Mali à Lyon, APEJ, etc.).
+Fournisseur d'Identité et SSO (IdP OIDC / OAuth2) pour l'écosystème numérique Malihub et les services publics partenaires.
 
 Propulsé par [Authentik](https://goauthentik.io) sous Docker avec reverse-proxy Traefik et certificats SSL Let's Encrypt automatiques.
 
@@ -9,13 +9,12 @@ Propulsé par [Authentik](https://goauthentik.io) sous Docker avec reverse-proxy
 ## 1. Fonctionnalités & Sécurité
 
 - **Authentification sans mot de passe (Passkeys / WebAuthn)** : Connexion biométrique via smartphone (Android / iOS) ou ordinateur (TouchID, Windows Hello, clés FIDO2).
-- **Standard OpenID Connect (OIDC)** : Émission de jetons JWT sécurisés pour l'ensemble des sites de l'écosystème (JobAvenir, Sites Faciles Mali, etc.).
+- **Standard OpenID Connect (OIDC)** : Émission de jetons JWT sécurisés pour l'ensemble des services web et portails applicatifs.
 - **Gestion des Rôles & Habilitations (RBAC)** :
-  - `malihub_admins` : Super-administrateurs de la plateforme.
-  - `jobavenir:admin` : Gestionnaires du portail d'offres et d'opportunités.
-  - `consulat:admin` : Gestionnaires consulaires.
-  - `apej:admin` : Gestionnaires de l'APEJ.
-  - `sites:editor` : Éditeurs de contenus des sites institutionnels.
+  - `platform_admins` : Super-administrateurs de la plateforme d'identité.
+  - `services:admin` : Administrateurs et gestionnaires de services métiers.
+  - `content:editor` : Éditeurs de contenus des sites institutionnels.
+  - `users` : Usagers et citoyens accédant aux téléservices.
 
 ---
 
